@@ -1,6 +1,6 @@
 # Dune RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) system built over the *Dune* universe.
+A Retrieval-Augmented Generation (RAG) system built over the *Dune* universe from https://dune.fandom.com/wiki/Dune_Wiki 
 
 This project implements an end-to-end pipeline for domain-specific question answering by combining semantic search with language model generation.
 
@@ -20,17 +20,17 @@ This enables:
 
 ## Architecture
 User Query
-↓
+
 Query Embedding
-↓
+
 FAISS Vector Search
-↓
+
 Relevant Context Retrieval
-↓
+
 Prompt Augmentation
-↓
+
 LLM Generation
-↓
+
 Final Answer
 
 
@@ -66,6 +66,36 @@ User queries are matched against the vector store.
 
 ### 5. Generation
 Relevant context is injected into the LLM prompt to produce grounded responses.
+
+---
+## Skills Demonstrated
+
+### Retrieval-Augmented Generation (RAG)
+Built an end-to-end pipeline combining semantic search with LLM-based generation for grounded responses.
+
+### Vector Databases & Similarity Search
+Implemented document retrieval using FAISS for efficient high-dimensional search.
+
+### Embedding-Based NLP
+Used Sentence Transformers to convert text into semantic vector space.
+
+### LLM-Oriented System Design
+Integrated retrieval context into prompts for improved answer quality.
+
+### Data Ingestion & Processing
+Collected and cleaned domain-specific corpus using BeautifulSoup and structured parsing.
+
+### Text Chunking & Preprocessing
+Applied splitting strategies using LangChain text splitters for optimal retrieval.
+
+### API Integration
+Managed external calls using requests / urllib pipelines.
+
+### Environment & Config Management
+Used python-dotenv for secure configuration handling.
+
+### Interactive Deployment
+Streamlit-based interface for real-time querying.
 
 ---
 
